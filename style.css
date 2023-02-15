@@ -8,7 +8,7 @@ main{
     box-sizing: border-box;
 }
 .content_fix{
-    margin: 0 auto;
+    margin: auto;
     width: 70%;
 }
 
@@ -16,42 +16,74 @@ main{
     color:#fff
 }
 #navbar{
-    border-bottom: 1px solid #7a7a7a;
-    
-  }
-  #navbar a{
+    border-bottom: 1px solid #ffffff8c;
+    margin: auto;
+}
+#navbar a{
     color: #fff;;
-  }
-  #navbar a:hover{
-    color: #7a7a7a;
-  }
-  #navbar .active{
+}
+#navbar a:hover{
+    scale: 1.1;
+}
+
+#navbar .active{
     border-bottom: 1px solid #050505;
-  }
-  .navbar-brand{
+}
+.navbar-brand{
     display: flex;
     align-items: center;
-  }
-  .navbar-brand img{
+}
+  .navbar-brand svg{
     width: 40px;
-  }
-  .navbar-brand span{
+}
+.navbar-brand span{
     font-weight: 700;
     font-size: 1.5em;
     margin-left: 0.5em;
     text-align: center;
-  }
-  #navbar-items .navbar-nav{
+}
+#navbar-items .navbar-nav{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-  }
-  #navbar-items .nav-item{
+}
+#navbar-items .nav-item{
     margin: 0 1em;
-  }
+}
+@media (max-width: 768px){
+    .navbar-brand svg{
+        width: 30px;
+    }
+    .navbar-brand span{
+        font-size: 1em;
+        margin-left: 0.5em;
+        text-align: center;
+    }
+}
+@media (max-width: 590px){
+    .container.py-3 {
+        margin: auto;
+        width: 80%;
+    }
+    .navbar-toggler{
+        font-size: 1em;
+    }
+    .navbar-brand svg{
+        width: 20px;
+    }
+}
+@media (max-width: 480px){
+    .container.py-3 {
+        margin: auto;
+        width: 90%;
+    }
+    .content_fix{
+        margin: auto;
+        width: 70%;
+    }
+}
 .pomofix_content{
     max-width: 480px;
-    min-width: 433px;
     margin: auto;
 }
 
@@ -62,32 +94,102 @@ main{
     margin-bottom: 20px;
     width: 100%;
 }
-.pomoselectors {
+
+/* .pomoselectors {
     display:flex;
     justify-content: center;
     align-items: center;
+} */
+.pomobuttons{
+    border: none;
+    color: white;
+    margin: 0px;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    font-weight: 300;
+}
+.selected{
+    border: none;
+    margin: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: none rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
 }
 .pomotime {
-    font-size: 120px;
+    font-size: 6em;
     font-weight: bold;
     margin-top: 5vh;
     margin-bottom: 5vh;
+}
+.startbutton{
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 22px;
+    height: 55px;
+    color: rgb(186, 73, 73);
+    font-weight: bold;
+    width: 200px;
+}
+@media (max-width: 768px){
+    .pomobuttons{
+        padding: 0;
+    }
+    /* .pomoselectors{
+        flex-wrap: wrap;
+    } */
+}
+@media (max-width: 576px){
+    .pomotime{
+        font-size: 4em;
+    }
+    .startbutton{
+        width: 6em;
+    }
 }
 
 
 #footer {
     padding: 1em 1em;
 }
+.footerfix-content{
+    margin: auto;
+    width: 60%;
+}
+@media (max-width: 769px){
+    .footerfix-content{
+        width: 80%;
+    }
+    
+}
+
 #footer-top {
     margin-bottom: 2em;
+    padding: 0;
 }
 #footer-top,
 #footer-top i {
     color: #fff;
 }
-#social-icons {
-    text-align: right;
+#social-icons{
+    text-align: center;
+    
 }
+
 #social-icons i{
     margin-right: 1em;
     font-size: 1.5em;
@@ -125,4 +227,19 @@ main{
 }
 #footer-bottom i {
     color: #e61e10;
+}
+@media (min-width: 320px){
+    #social-icons {
+        text-align: left;
+    }
+}
+@media (min-width:999px){
+    #social-icons{
+        text-align: right;
+    }
+}
+@media (min-width:1440px){
+    #social-icons{
+        padding-right:5em;
+    }
 }
