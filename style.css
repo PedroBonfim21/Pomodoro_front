@@ -1,12 +1,78 @@
-.content_fix{
-    margin: auto;
-    color:#e61e10;
-    width: 50%;
+main{
+    background-color: rgb(186, 73, 73);
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    transition: background-color 0.5s ease-in-out 0s;
+    padding-bottom: 12px;
+    box-sizing: border-box;
 }
-.navbar-toggler{
-    margin-left: 50px;
+.content_fix{
+    margin: 0 auto;
+    width: 70%;
 }
 
+.primarycolor{
+    color:#fff
+}
+#navbar{
+    border-bottom: 1px solid #7a7a7a;
+    
+  }
+  #navbar a{
+    color: #fff;;
+  }
+  #navbar a:hover{
+    color: #7a7a7a;
+  }
+  #navbar .active{
+    border-bottom: 1px solid #050505;
+  }
+  .navbar-brand{
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand img{
+    width: 40px;
+  }
+  .navbar-brand span{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    text-align: center;
+  }
+  #navbar-items .navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  #navbar-items .nav-item{
+    margin: 0 1em;
+  }
+.pomofix_content{
+    max-width: 480px;
+    min-width: 433px;
+    margin: auto;
+}
+
+.pomoclock {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 0px 30px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.pomoselectors {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.pomotime {
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
 
 
 #footer {
