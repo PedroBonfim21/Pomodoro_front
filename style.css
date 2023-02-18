@@ -65,9 +65,6 @@ main{
         margin: auto;
         width: 80%;
     }
-    .navbar-toggler{
-        font-size: 1em;
-    }
     .navbar-brand svg{
         width: 20px;
     }
@@ -79,7 +76,10 @@ main{
     }
     .content_fix{
         margin: auto;
-        width: 70%;
+        width: 100%;
+    }
+    .pomofix_content{
+        width: 80%;
     }
 }
 .pomofix_content{
